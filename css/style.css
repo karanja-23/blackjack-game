@@ -1,0 +1,100 @@
+*{
+    font-family: "Inconsolata", monospace;
+}
+.container-fluid span{
+    font-weight: 900;
+    padding: 0.5px;
+    font-size: larger;
+    font-weight: 900;
+}
+.container-fluid{
+    background-color:  rgb(89, 126, 89);
+    padding: 5px;
+    margin-bottom: 0px;    
+}
+
+.nav-item{
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.nav-item :active, .nav-item :hover{
+    background-color: white;
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+.image-container h3{
+    background-color: rgb(89, 126, 89);
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+    width: 100vw;
+    margin-top: 0px;   
+}
+.titles{
+    background-color: rgb(89, 126, 89);
+    font-weight: 600;
+    text-align: center;
+    padding: 7px;
+    width: 100vw;
+    margin-top: 10px;
+}
+
+.Blackjack_content{
+    display: block;
+    margin: auto;
+    width: 90%;
+    line-height: 2em;
+        
+}
+.Blackjack_content span.color{
+    background-color: rgb(89, 126, 89);
+    padding: 5px;
+    font-weight: 900;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
+
+.Blackjack_content span.history{
+    text-decoration: underline rgb(89, 126, 89);
+}
+.steps{
+    line-height: 2em;
+    
+    
+}
+.steps div{
+    display: flex; 
+    flex-wrap: wrap;   
+    gap: 7px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+#cards2_7, #face_cards, #aces{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 5pz;
+    
+}
+.btn.btn-primary.btn-sm{
+    background-color: rgb(89, 126, 89);
+    color: black;
+    font-weight: 600;
+    display: block;
+    margin: 4px auto;
+    border: 3px solid black;
+    
+}

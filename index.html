@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blackjack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: green;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><span style="color: black;">B</span><span style="color: white;">L</span><span style="color: black;">A</span><span style="color: white;">C</span><span style="color: black;">K</span><span style="color: white;">J</span><span style="color: black;">A</span><span style="color: white;">C</span><span style="color: black;">K</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about_Blackjack">About Blackjack</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#dealing">Dealing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#rules">Outcomes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#try_it_out" tabindex="-1" aria-disabled="false">Try it out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+     
+     <div class="image-container">
+        <h3>WELCOME TO BLACKJACK!</h3>
+        <img src="./media/blackjack1.png" class="img-fluid" alt="...">
+      </div>
+
+     <div id="about_Blackjack">
+        <h4 class="titles">About Blackjack</h4>
+        <div class="Blackjack_content">
+            <p>
+              <span class="color">Blackjack</span> or <span class="color">21</span> is the <span class="history">most widely played casino banking game in the world!</span>           
+              The game is a comparing card game where players compete with the dealer rather than each other. Traditionaly the game is played at a table of <span class="history">two to seven players</span>, 
+              one of which is the dealer and uses decks of 52 cards.
+                                            
+            </p>
+            <p>
+              <span class="color">The goal of the game is to beat the dealer:</span> Have a hand that totals higher than the dealer's, but<span class="history"> doesn't total more than 21</span>. 
+              If your hand totals more than 21, it is called a <span class="color">burst</span>,which means you are out of the game.
+              
+            </p>
+            <p>
+              → All number <span class="history">cards(2-7), are taken at face value</span>, ie. they score the value indicated on them.(card 2 = 2 points, card 7 = 7 points...)
+              <div id="cards2_7"></div>
+            </p>
+            <p>
+              → Each face card (jack, queen, king), counts as <span class="history">10 points</span>:
+              <div id="face_cards"></div>
+            </p>
+            <p>
+              → The aces count as <span class="history">1 point</span> or <span class="history">11 points</span>, whichever is best for the player's hand.
+              <div id="aces"></div>
+            </p>
+        </div>
+     </div>
+     <div id="dealing">
+        <h4 class="titles">Dealing</h4>
+        <div class="Blackjack_content">
+            <ol>
+                <li class="steps" id="step_1">Both the dealer and player(s) are dealt two cards, but the dealer only shows one cardwhile the other is kept face down.
+                  <span class="history">The player always goes first</span>
+                 <br> 
+                 <div style="display: flex;flex-direction: column;">
+                  <button id="deal_btn" type="button" class="btn btn-primary btn-sm">Lets Deal</button>
+                
+                 </div>
+
+                  <div id="step_1_div"></div>
+                </li>
+                <li class="steps" id="step_2">
+                  The player has the option to <span class="history">take more cards or stay their hand</span>.(With the goal of getting closer than the dealer) to 21, but being cautious not to go over 21.
+                  In the instance above, the player will take another card, inorder to increase his point total:
+                  <div><button id="deal_btn2" type="button" class="btn btn-primary btn-sm">Lets Deal</button></div>
+                  <div id="step_2_div"><div>
+                </li>
+                <li class="steps" id="step_3">
+                  The dealer takes his/her turn by flipping his card face up and displaying its value:
+                  <div><button id="deal_btn3" type="button" class="btn btn-primary btn-sm">Lets Deal</button></div>
+                  <div id="step_3_div"><div>
+                    
+                </li>
+                <li>Having revealed his/her points, the dealer compares his points to the player's points. If the player's points are higher, the player wins. The latter is also true.
+                  In the instance above, the player wins because he has more points than the dealer:<br>
+                  <div style="text-align: center; margin: 5px;">
+                    <span class="color">player= 17 points</span> vs <span class="color">dealer`s = 16 points</span><br>
+                    <span class="color" style="margin-top: 5px;">The player wins!</span>
+                  </div>
+                </li>
+            </ol>
+        </div>
+     </div>
+     <div id="rules">
+        <h4 class="titles">Outcomes</h4>
+        <div class="Blackjack_content">
+          → When playing blackjack, there are <span class="history">four</span> expected outcomes:
+          <ol>
+            <li>
+              <span class="color">The player wins</span>
+              <p>The player gets a <span class="history">higher hand</span> than the dealer, which also ultimately results to the dealer losing.</p>
+
+            </li>
+            <li>
+              <span class="color">The player loses</span>
+              <p>The player either gets a <span class="history">lower hand than the dealer</span>, or the player's <span class="history">points exceed 21</span>. 
+                This also means that the dealer wins the game. </p>
+            </li>
+            <li>
+              <span class="color">A push</span>
+              <p>The player gets the <span class="history">same point value as the dealer</span>. The game ends with no win or lose.</p>
+            </li>
+            <li>
+              <span class="color">'Blackjack'</span>
+              <p>
+                This is an <span class="history">automatic win!</span> It occurs if the <span class="history">player is dealt an ace and a 10 value card, as the first 2 cards. </span>
+                An ace and a 10 point card will result in a total of 21 points, which is the highest point total possible, hence the auto win.
+              </p>
+            </li>
+          </ol>
+
+        </div>
+     </div>
+     <div id="try_it_out">
+        <h4 class="titles">Try it out</h4>
+     </div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script defer src="./src/main.js"></script>
+</body>
+</html>

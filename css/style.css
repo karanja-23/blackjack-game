@@ -98,3 +98,7 @@ a{
     border: 3px solid black;
     
 }
+#point_1:hover, #points_11:hover{
+    background-color: rgb(41, 68, 41);
+    
+}
